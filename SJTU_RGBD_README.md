@@ -44,6 +44,11 @@ ros2 launch orb_slam3_ros2_wrapper rgbd_sjtu.launch.py
 
 ## 2️⃣ Start Depth Mapping Task
 
+activate a venv:
+``` bash
+source .venv/bin/activate
+``` 
+
 ``` bash
 cd ~/GIT/TheAgency
 python3 -m sparx_agency.tasks.mapping.create_map_from_video   --ros-args   -p use_sim_time:=true
