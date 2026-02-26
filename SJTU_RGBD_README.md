@@ -35,6 +35,7 @@ sudo docker compose run -e ROS_DOMAIN_ID=0 orb_slam3_22_humble
 ```
 
 Inside the container:
+the launch file is in ORB-SLAM3-ROS2-Docker/orb_slam3_ros2_wrapper/launch/rgbd_sjtu.launch.py
 
 ``` bash
 ros2 launch orb_slam3_ros2_wrapper rgbd_sjtu.launch.py
@@ -126,6 +127,19 @@ sudo docker compose run -e ROS_DOMAIN_ID=0 orb_slam3_22_humble
 All terminals (host + container) must use the same ROS_DOMAIN_ID.
 
 ------------------------------------------------------------------------
+
+also 
+
+apt update
+apt install -y ros-humble-rmw-cyclonedds-cpp
+
+
+in host and in the container:
+
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+ros2 daemon stop
+ros2 daemon start
+
 
 # 🛠 Useful Debug Commands
 
