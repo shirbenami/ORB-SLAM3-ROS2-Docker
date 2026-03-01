@@ -34,3 +34,8 @@ container_root/ros_env_vars.sh
 container_root/.nv/
 orb_slam3_ros2_wrapper/datasets/**
 !orb_slam3_ros2_wrapper/datasets/PLACE_YOUR_DATASETS_HERE
+*.pickle
+*.log
+*.pyc 
+results/venv/
+container_root/.ros/rosdep/sources.cache/index

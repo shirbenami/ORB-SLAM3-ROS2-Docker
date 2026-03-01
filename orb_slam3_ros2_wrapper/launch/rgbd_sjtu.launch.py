@@ -70,7 +70,7 @@ def generate_launch_description():
             parameters=[configured_params])
         remappings=[
                 ('/camera/image_raw', '/simple_drone/front/image_raw'),
-                ('/camera/depth/image_raw', '/debug/depth_vis')
+                ('/camera/depth/image_raw', '/debug/depth_raw'),
             ]        
         return [declare_params_file_cmd, orb_slam3_node]
 
