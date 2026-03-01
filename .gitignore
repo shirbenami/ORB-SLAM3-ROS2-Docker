@@ -39,3 +39,5 @@ orb_slam3_ros2_wrapper/datasets/**
 *.pyc 
 results/venv/
 container_root/.ros/rosdep/sources.cache/index
+
+ORB_SLAM3
